@@ -4,13 +4,13 @@ export default function handleCustomerMutation(mutationRootKey) {
     const rootModel = model[mutationRootKey];
 
     if (rootData && rootData.userErrors && !rootData.userErrors.length) {
-      rootModel.customer = {...rootData};
+      rootModel.customer = rootData;
 
       return rootModel.customer;
     }
 
     if (rootData && rootData.customerUserErrors && !rootData.customerUserErrors.length) {
-      rootModel.customer = {...rootData};
+      rootModel.customer = rootData;
 
       return rootModel.customer;
     }
