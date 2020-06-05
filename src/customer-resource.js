@@ -28,7 +28,7 @@ class CustomerResource extends Resource {
    *
    * @example
    * const input = {
-   *   email: 'user@example.com',
+   *   email: 'user[at]example.com',
    *   password: 'HiZqFuDvDdQ7'
    * };
    *
@@ -87,7 +87,7 @@ class CustomerResource extends Resource {
    *
    * @example
    * const input = {
-   *   email: 'user@example.com',
+   *   email: 'user[at]example.com',
    *   password: 'HiZqFuDvDdQ7'
    * };
    *
@@ -242,7 +242,7 @@ class CustomerResource extends Resource {
    * Recovers a customer. Sends a reset password email to the customer, as the first step in the reset password process.
    *
    * @example
-   * client.customer.recover('user@example.com').then(() => {
+   * client.customer.recover('user[at]example.com').then(() => {
    *   // Do something after sending a reset password email
    * });
    *
