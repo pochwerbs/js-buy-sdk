@@ -1,0 +1,14 @@
+mutation customerReset($id: ID!, $input: CustomerResetInput!) {
+  customerReset(id: $id, input: $input) {
+    customer {
+      ...CustomerFragment
+    }
+    customerAccessToken {
+      accessToken
+      expiresAt
+    }
+    customerUserErrors {
+      ...CustomerUserErrorFragment
+    }
+  }
+}

@@ -1,0 +1,42 @@
+fragment CustomerFragment on Customer {
+  addresses(first: 250) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+    edges {
+      cursor
+      node {
+        ...MailingAddressFragment
+      }
+    }
+  }
+  orders(first: 250) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+    edges {
+      cursor
+      node {
+        ...OrderFragment
+      }
+    }
+  }
+  acceptsMarketing
+  createdAt
+  defaultAddress {
+    ...MailingAddressFragment
+  }
+  displayName
+  email
+  firstName
+  id
+  lastIncompleteCheckout {
+    ...CheckoutFragment
+  }
+  lastName
+  phone
+  tags
+  updatedAt
+}

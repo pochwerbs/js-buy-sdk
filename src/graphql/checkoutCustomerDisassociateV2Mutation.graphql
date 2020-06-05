@@ -1,0 +1,10 @@
+mutation checkoutCustomerDisassociateV2($checkoutId: ID!) {
+  checkoutCustomerDisassociateV2(checkoutId: $checkoutId) {
+    checkout {
+      ...CheckoutFragment
+    }
+    checkoutUserErrors {
+      ...CheckoutUserErrorFragment
+    }
+  }
+}

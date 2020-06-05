@@ -1,0 +1,10 @@
+mutation customerAddressUpdate($customerAccessToken: String!, $id: ID!, $address: MailingAddressInput!) {
+  customerAddressUpdate(customerAccessToken: $customerAccessToken, id: $id, address: $address) {
+    customerAddress {
+      ...MailingAddressFragment
+    }
+    customerUserErrors {
+      ...CustomerUserErrorFragment
+    }
+  }
+}

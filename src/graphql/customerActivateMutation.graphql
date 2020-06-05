@@ -1,0 +1,14 @@
+mutation customerActivate($id: ID!, $input: CustomerActivateInput!) {
+  customerActivate(id: $id, input: $input) {
+    customer {
+      ...CustomerFragment
+    }
+    customerAccessToken {
+      accessToken
+      expiresAt
+    }
+    customerUserErrors {
+      ...CustomerUserErrorFragment
+    }
+  }
+}
