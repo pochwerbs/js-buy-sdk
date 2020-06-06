@@ -20,6 +20,7 @@ import types from '../schema.json';
  * @property {ShopResource} shop The property under which shop fetching methods live.
  * @property {CheckoutResource} checkout The property under which shop fetching and mutating methods live.
  * @property {ImageResource} image The property under which image helper methods live.
+ * @property {CustomerResource} customer The property under which customer fetching and mutating methods live.
  */
 class Client {
 

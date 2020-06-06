@@ -1,5 +1,5 @@
 query($customerAccessToken: String!) {
-  customer(customerAccessToken: $customerAccessToken) {
+  node(customerAccessToken: $customerAccessToken) {
     ...CustomerFragment
   }
 }

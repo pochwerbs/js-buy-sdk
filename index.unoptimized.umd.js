@@ -9987,12 +9987,12 @@ function query$26(client) {
     root.add("updatedAt");
   });
   document.addQuery([variables.__defaultOperation__.customerAccessToken], function (root) {
-    root.add("customer", {
+    root.add("node", {
       args: {
         customerAccessToken: variables.__defaultOperation__.customerAccessToken
       }
-    }, function (customer) {
-      customer.addFragment(spreads.CustomerFragment);
+    }, function (node) {
+      node.addFragment(spreads.CustomerFragment);
     });
   });
   return document;
@@ -15371,6 +15371,7 @@ var types = recursivelyFreezeObject(Types);
  * @property {ShopResource} shop The property under which shop fetching methods live.
  * @property {CheckoutResource} checkout The property under which shop fetching and mutating methods live.
  * @property {ImageResource} image The property under which image helper methods live.
+ * @property {CustomerResource} customer The property under which customer fetching and mutating methods live.
  */
 
 var Client = function () {
