@@ -1,0 +1,4 @@
+fragment MoneyV2Fragment on MoneyV2 {
+  amount
+  currencyCode
+}

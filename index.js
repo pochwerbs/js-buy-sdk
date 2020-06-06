@@ -8490,6 +8490,10 @@ function query$24(client) {
       product.add("handle");
     });
   });
+  spreads.MoneyV2Fragment = document.defineFragment("MoneyV2Fragment", "MoneyV2", function (root) {
+    root.add("amount");
+    root.add("currencyCode");
+  });
   spreads.OrderFragment = document.defineFragment("OrderFragment", "Order", function (root) {
     root.add("id");
     root.add("currencyCode");
@@ -8504,18 +8508,28 @@ function query$24(client) {
     });
     root.add("subtotalPriceV2", {
       alias: "subtotalPrice"
+    }, function (subtotalPriceV2) {
+      subtotalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalPriceV2", {
       alias: "totalPrice"
+    }, function (totalPriceV2) {
+      totalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalRefundedV2", {
       alias: "totalRefunded"
+    }, function (totalRefundedV2) {
+      totalRefundedV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalShippingPriceV2", {
       alias: "totalShippingPrice"
+    }, function (totalShippingPriceV2) {
+      totalShippingPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalTaxV2", {
       alias: "totalTax"
+    }, function (totalTaxV2) {
+      totalTaxV2.addFragment(spreads.MoneyV2Fragment);
     });
   });
   spreads.CheckoutFragment = document.defineFragment("CheckoutFragment", "Checkout", function (root) {
@@ -9596,6 +9610,10 @@ function query$26(client) {
     });
     root.add("provinceCode");
   });
+  spreads.MoneyV2Fragment = document.defineFragment("MoneyV2Fragment", "MoneyV2", function (root) {
+    root.add("amount");
+    root.add("currencyCode");
+  });
   spreads.VariantFragment = document.defineFragment("VariantFragment", "ProductVariant", function (root) {
     root.add("id");
     root.add("title");
@@ -9724,18 +9742,28 @@ function query$26(client) {
     });
     root.add("subtotalPriceV2", {
       alias: "subtotalPrice"
+    }, function (subtotalPriceV2) {
+      subtotalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalPriceV2", {
       alias: "totalPrice"
+    }, function (totalPriceV2) {
+      totalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalRefundedV2", {
       alias: "totalRefunded"
+    }, function (totalRefundedV2) {
+      totalRefundedV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalShippingPriceV2", {
       alias: "totalShippingPrice"
+    }, function (totalShippingPriceV2) {
+      totalShippingPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalTaxV2", {
       alias: "totalTax"
+    }, function (totalTaxV2) {
+      totalTaxV2.addFragment(spreads.MoneyV2Fragment);
     });
   });
   spreads.CheckoutFragment = document.defineFragment("CheckoutFragment", "Checkout", function (root) {
@@ -10076,6 +10104,10 @@ function query$30(client) {
     });
     root.add("provinceCode");
   });
+  spreads.MoneyV2Fragment = document.defineFragment("MoneyV2Fragment", "MoneyV2", function (root) {
+    root.add("amount");
+    root.add("currencyCode");
+  });
   spreads.VariantFragment = document.defineFragment("VariantFragment", "ProductVariant", function (root) {
     root.add("id");
     root.add("title");
@@ -10204,18 +10236,28 @@ function query$30(client) {
     });
     root.add("subtotalPriceV2", {
       alias: "subtotalPrice"
+    }, function (subtotalPriceV2) {
+      subtotalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalPriceV2", {
       alias: "totalPrice"
+    }, function (totalPriceV2) {
+      totalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalRefundedV2", {
       alias: "totalRefunded"
+    }, function (totalRefundedV2) {
+      totalRefundedV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalShippingPriceV2", {
       alias: "totalShippingPrice"
+    }, function (totalShippingPriceV2) {
+      totalShippingPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalTaxV2", {
       alias: "totalTax"
+    }, function (totalTaxV2) {
+      totalTaxV2.addFragment(spreads.MoneyV2Fragment);
     });
   });
   spreads.CheckoutFragment = document.defineFragment("CheckoutFragment", "Checkout", function (root) {
@@ -10484,6 +10526,10 @@ function query$31(client) {
     });
     root.add("provinceCode");
   });
+  spreads.MoneyV2Fragment = document.defineFragment("MoneyV2Fragment", "MoneyV2", function (root) {
+    root.add("amount");
+    root.add("currencyCode");
+  });
   spreads.VariantFragment = document.defineFragment("VariantFragment", "ProductVariant", function (root) {
     root.add("id");
     root.add("title");
@@ -10612,18 +10658,28 @@ function query$31(client) {
     });
     root.add("subtotalPriceV2", {
       alias: "subtotalPrice"
+    }, function (subtotalPriceV2) {
+      subtotalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalPriceV2", {
       alias: "totalPrice"
+    }, function (totalPriceV2) {
+      totalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalRefundedV2", {
       alias: "totalRefunded"
+    }, function (totalRefundedV2) {
+      totalRefundedV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalShippingPriceV2", {
       alias: "totalShippingPrice"
+    }, function (totalShippingPriceV2) {
+      totalShippingPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalTaxV2", {
       alias: "totalTax"
+    }, function (totalTaxV2) {
+      totalTaxV2.addFragment(spreads.MoneyV2Fragment);
     });
   });
   spreads.CheckoutFragment = document.defineFragment("CheckoutFragment", "Checkout", function (root) {
@@ -11024,6 +11080,10 @@ function query$35(client) {
     });
     root.add("provinceCode");
   });
+  spreads.MoneyV2Fragment = document.defineFragment("MoneyV2Fragment", "MoneyV2", function (root) {
+    root.add("amount");
+    root.add("currencyCode");
+  });
   spreads.VariantFragment = document.defineFragment("VariantFragment", "ProductVariant", function (root) {
     root.add("id");
     root.add("title");
@@ -11152,18 +11212,28 @@ function query$35(client) {
     });
     root.add("subtotalPriceV2", {
       alias: "subtotalPrice"
+    }, function (subtotalPriceV2) {
+      subtotalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalPriceV2", {
       alias: "totalPrice"
+    }, function (totalPriceV2) {
+      totalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalRefundedV2", {
       alias: "totalRefunded"
+    }, function (totalRefundedV2) {
+      totalRefundedV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalShippingPriceV2", {
       alias: "totalShippingPrice"
+    }, function (totalShippingPriceV2) {
+      totalShippingPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalTaxV2", {
       alias: "totalTax"
+    }, function (totalTaxV2) {
+      totalTaxV2.addFragment(spreads.MoneyV2Fragment);
     });
   });
   spreads.CheckoutFragment = document.defineFragment("CheckoutFragment", "Checkout", function (root) {
@@ -11458,6 +11528,10 @@ function query$37(client) {
     });
     root.add("provinceCode");
   });
+  spreads.MoneyV2Fragment = document.defineFragment("MoneyV2Fragment", "MoneyV2", function (root) {
+    root.add("amount");
+    root.add("currencyCode");
+  });
   spreads.VariantFragment = document.defineFragment("VariantFragment", "ProductVariant", function (root) {
     root.add("id");
     root.add("title");
@@ -11586,18 +11660,28 @@ function query$37(client) {
     });
     root.add("subtotalPriceV2", {
       alias: "subtotalPrice"
+    }, function (subtotalPriceV2) {
+      subtotalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalPriceV2", {
       alias: "totalPrice"
+    }, function (totalPriceV2) {
+      totalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalRefundedV2", {
       alias: "totalRefunded"
+    }, function (totalRefundedV2) {
+      totalRefundedV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalShippingPriceV2", {
       alias: "totalShippingPrice"
+    }, function (totalShippingPriceV2) {
+      totalShippingPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalTaxV2", {
       alias: "totalTax"
+    }, function (totalTaxV2) {
+      totalTaxV2.addFragment(spreads.MoneyV2Fragment);
     });
   });
   spreads.CheckoutFragment = document.defineFragment("CheckoutFragment", "Checkout", function (root) {
@@ -11871,6 +11955,10 @@ function query$38(client) {
     });
     root.add("provinceCode");
   });
+  spreads.MoneyV2Fragment = document.defineFragment("MoneyV2Fragment", "MoneyV2", function (root) {
+    root.add("amount");
+    root.add("currencyCode");
+  });
   spreads.VariantFragment = document.defineFragment("VariantFragment", "ProductVariant", function (root) {
     root.add("id");
     root.add("title");
@@ -11999,18 +12087,28 @@ function query$38(client) {
     });
     root.add("subtotalPriceV2", {
       alias: "subtotalPrice"
+    }, function (subtotalPriceV2) {
+      subtotalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalPriceV2", {
       alias: "totalPrice"
+    }, function (totalPriceV2) {
+      totalPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalRefundedV2", {
       alias: "totalRefunded"
+    }, function (totalRefundedV2) {
+      totalRefundedV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalShippingPriceV2", {
       alias: "totalShippingPrice"
+    }, function (totalShippingPriceV2) {
+      totalShippingPriceV2.addFragment(spreads.MoneyV2Fragment);
     });
     root.add("totalTaxV2", {
       alias: "totalTax"
+    }, function (totalTaxV2) {
+      totalTaxV2.addFragment(spreads.MoneyV2Fragment);
     });
   });
   spreads.CheckoutFragment = document.defineFragment("CheckoutFragment", "Checkout", function (root) {
@@ -12279,7 +12377,7 @@ var CustomerResource = function (_Resource) {
      *
      * @example
      * const input = {
-     *   email: 'user@example.com',
+     *   email: 'user[at]example.com',
      *   password: 'HiZqFuDvDdQ7'
      * };
      *
@@ -12340,7 +12438,7 @@ var CustomerResource = function (_Resource) {
      *
      * @example
      * const input = {
-     *   email: 'user@example.com',
+     *   email: 'user[at]example.com',
      *   password: 'HiZqFuDvDdQ7'
      * };
      *
@@ -12519,7 +12617,7 @@ var CustomerResource = function (_Resource) {
      * Recovers a customer. Sends a reset password email to the customer, as the first step in the reset password process.
      *
      * @example
-     * client.customer.recover('user@example.com').then(() => {
+     * client.customer.recover('user[at]example.com').then(() => {
      *   // Do something after sending a reset password email
      * });
      *
@@ -12610,7 +12708,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'fetch',
     value: function fetch(customerAccessToken) {
-      return this.graphQLClient.send(query$26, { customerAccessToken: customerAccessToken }).then(defaultResolver('customer'));
+      return this.graphQLClient.send(query$26, { customerAccessToken: customerAccessToken }).then(defaultResolver('node'));
     }
   }]);
   return CustomerResource;

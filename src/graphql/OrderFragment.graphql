@@ -10,9 +10,19 @@ fragment OrderFragment on Order {
   shippingAddress {
     ...MailingAddressFragment
   }
-  subtotalPrice: subtotalPriceV2
-  totalPrice: totalPriceV2
-  totalRefunded: totalRefundedV2
-  totalShippingPrice: totalShippingPriceV2
-  totalTax: totalTaxV2
+  subtotalPrice: subtotalPriceV2 {
+    ...MoneyV2Fragment
+  }
+  totalPrice: totalPriceV2 {
+    ...MoneyV2Fragment
+  }
+  totalRefunded: totalRefundedV2 {
+    ...MoneyV2Fragment
+  }
+  totalShippingPrice: totalShippingPriceV2 {
+    ...MoneyV2Fragment
+  }
+  totalTax: totalTaxV2 {
+    ...MoneyV2Fragment
+  }
 }
