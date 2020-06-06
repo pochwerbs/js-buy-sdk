@@ -323,7 +323,7 @@ class CustomerResource extends Resource {
   fetch(customerAccessToken) {
     return this.graphQLClient
       .send(customerNodeQuery, {customerAccessToken})
-      .then(defaultResolver('node'));
+      .then(defaultResolver('customer'));
   }
 }
 
